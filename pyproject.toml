@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "hexlet-python-package"
+name = "gendiff"
 version = "0.3.0"
 description = ""
 authors = ["skip"]
@@ -14,7 +14,7 @@ pytest-cov = "^2.11.1"
 wemake-python-styleguide = "^0.15.2"
 
 [tool.poetry.scripts]
-hexlet-python-package = "hexlet_python_package.scripts.hexlet_python_package:main"
+gendiff = "gendiff.scripts.hexlet_python_package:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
