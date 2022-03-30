@@ -1,10 +1,9 @@
 <<<<<<< HEAD
 # python-package
 
-[![Github Actions Status](https://github.com/hexlet-boilerplates/python-package/workflows/Python%20CI/badge.svg)](https://github.com/hexlet-boilerplates/python-package/actions)
-[![wemake-python-styleguide](https://img.shields.io/badge/style-wemake-000000.svg)](https://github.com/wemake-services/wemake-python-styleguide)
-[![Maintainability](https://api.codeclimate.com/v1/badges/df66c0cbbeca7d822f23/maintainability)](https://codeclimate.com/github/hexlet-boilerplates/python-package/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/df66c0cbbeca7d822f23/test_coverage)](https://codeclimate.com/github/hexlet-boilerplates/python-package/test_coverage)
+[![generate-diff](https://github.com/devriez/python-project-lvl2-2022/actions/workflows/pyci.yml/badge.svg)](https://github.com/devriez/python-project-lvl2-2022/actions/workflows/pyci.yml)
+<a href="https://codeclimate.com/github/devriez/python-project-lvl2-2022/maintainability"><img src="https://api.codeclimate.com/v1/badges/3a52db7444587a39a51c/maintainability" /></a>
+<a href="https://codeclimate.com/github/devriez/python-project-lvl2-2022/test_coverage"><img src="https://api.codeclimate.com/v1/badges/3a52db7444587a39a51c/test_coverage" /></a>
 
 ### Links
 
