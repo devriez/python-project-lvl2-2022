@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # python-package
 
 [![Github Actions Status](https://github.com/hexlet-boilerplates/python-package/workflows/Python%20CI/badge.svg)](https://github.com/hexlet-boilerplates/python-package/actions)
@@ -18,3 +19,26 @@ This project was built using these tools:
 [![Hexlet Ltd. logo](https://raw.githubusercontent.com/Hexlet/assets/master/images/hexlet_logo128.png)](https://ru.hexlet.io/pages/about?utm_source=github&utm_medium=link&utm_campaign=python-package)
 
 This repository is created and maintained by the team and the community of Hexlet, an educational project. [Read more about Hexlet (in Russian)](https://ru.hexlet.io/pages/about?utm_source=github&utm_medium=link&utm_campaign=python-package).
+=======
+# python-package
+
+[![Python CI](https://github.com/devriez/python-project-lvl2-2022/actions/workflows/pyci.yml/badge.svg)](https://github.com/devriez/python-project-lvl2-2022/actions/workflows/pyci.yml)
+<a href="https://codeclimate.com/github/devriez/python-project-lvl2-2022/maintainability"><img src="https://api.codeclimate.com/v1/badges/3a52db7444587a39a51c/maintainability" /></a>
+
+
+[![Test Coverage](https://api.codeclimate.com/v1/badges/df66c0cbbeca7d822f23/test_coverage)](https://codeclimate.com/github/hexlet-boilerplates/python-package/test_coverage)
+
+### Links
+
+This project was built using these tools:
+
+| Tool                                                                        | Description                                             |
+|-----------------------------------------------------------------------------|---------------------------------------------------------|
+| [poetry](https://poetry.eustace.io/)                                        | "Python dependency management and packaging made easy"  |
+| [Py.Test](https://pytest.org)                                               | "A mature full-featured Python testing tool"            |
+| [wemake-python-styleguide](https://wemake-python-stylegui.de)               | "the strictest and most opinionated python linter ever" |
+
+[![Hexlet Ltd. logo](https://raw.githubusercontent.com/Hexlet/assets/master/images/hexlet_logo128.png)](https://ru.hexlet.io/pages/about?utm_source=github&utm_medium=link&utm_campaign=python-package)
+
+This repository is created and maintained by the team and the community of Hexlet, an educational project. [Read more about Hexlet (in Russian)](https://ru.hexlet.io/pages/about?utm_source=github&utm_medium=link&utm_campaign=python-package).
+>>>>>>> 8a9d141643c770b56c6135a982dd8b81b436b285
