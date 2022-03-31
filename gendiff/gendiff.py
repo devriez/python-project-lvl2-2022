@@ -1,21 +1,21 @@
 import json
-
-
-def make_lowcase_for_boolean_name_in_json(json_file):
-    for i in json_file:
-        if type(json_file[i]) is bool:
-            json_file[i] = str(json_file[i]).lower()
+from gendiff.parser import file_parsing
 
 
 def generate_diff(file_path1, file_path2):
-    file1 = json.load(open(file_path1))
-    file2 = json.load(open(file_path2))
-    make_lowcase_for_boolean_name_in_json(file1)
-    make_lowcase_for_boolean_name_in_json(file2)
+    dict1 = file_parsing(file_path1)
+    dict2 = file_parsing(file_path2)
+    diff_dict = make_diff_dict(dict1, dict2)
+    return build_result_string(diff_dict)
+
+
+
+def make_diff_dict(file1, file2):
     result = {}
 
     keys1 = set(file1.keys())
     keys2 = set(file2.keys())
+
     added_keys = keys2 - keys1
     deleted_keys = keys1 - keys2
     common_keys = keys1 & keys2
@@ -35,17 +35,22 @@ def generate_diff(file_path1, file_path2):
                 'value': {'old': file1[key], 'new': file2[key]}
             }
 
-    sorted_keys = sorted(result.keys())
-    result_string = '{\n'
-    for key in sorted_keys:
-        if result[key]['status'] == 'added':
-            result_string += f"  + {key}: {result[key]['value']}\n"
-        elif result[key]['status'] == 'deleted':
-            result_string += f"  - {key}: {result[key]['value']}\n"
-        elif result[key]['status'] == 'unchanged':
-            result_string += f"    {key}: {result[key]['value']}\n"
-        else:
-            result_string += f"  - {key}: {result[key]['value']['old']}\n"
-            result_string += f"  + {key}: {result[key]['value']['new']}\n"
+    return result
 
-    return result_string + '}'
+
+def build_result_string(diff_dict):
+    diff_string = '{\n'
+    sorted_keys = sorted(diff_dict.keys())
+
+    for key in sorted_keys:
+        if diff_dict[key]['status'] == 'added':
+            diff_string += f"  + {key}: {diff_dict[key]['value']}\n"
+        elif diff_dict[key]['status'] == 'deleted':
+            diff_string += f"  - {key}: {diff_dict[key]['value']}\n"
+        elif diff_dict[key]['status'] == 'unchanged':
+            diff_string += f"    {key}: {diff_dict[key]['value']}\n"
+        else:
+            diff_string += f"  - {key}: {diff_dict[key]['value']['old']}\n"
+            diff_string += f"  + {key}: {diff_dict[key]['value']['new']}\n"
+
+    return diff_string + '}'
