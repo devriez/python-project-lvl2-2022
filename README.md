@@ -1,4 +1,4 @@
-# python-package
+# Difference calculator between two files JSON and YAML format.
 
 [![generate-diff](https://github.com/devriez/python-project-lvl2-2022/actions/workflows/pyci.yml/badge.svg)](https://github.com/devriez/python-project-lvl2-2022/actions/workflows/pyci.yml)
 <a href="https://codeclimate.com/github/devriez/python-project-lvl2-2022/maintainability"><img src="https://api.codeclimate.com/v1/badges/3a52db7444587a39a51c/maintainability" /></a>
