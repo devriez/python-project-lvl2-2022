@@ -20,7 +20,6 @@ def plain_render(diff_dict):  # noqa: C901
             node_status = tree[node]['status']
             node_path = ('.').join(level + [node])
 
-
             if node_status == 'added':
                 value = normalise_data(node_value)
                 result.append(
