@@ -22,7 +22,7 @@ You can also specify the format explicitly. Gendiff supports the output of the f
 
 'stylish output (--format=stylish)'
 
-'plain text output (--format=playn)'
+'plain text output (--format=plain)'
 
 'json output (--format=json)'
 
